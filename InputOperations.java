@@ -10,6 +10,8 @@ public class InputOperations {
         System.out.print("Input second number: ");
         int y = in.nextInt();
 
+        in.close();
+
         System.out.println(x + " + " + y + " = " + (x + y));
 
         System.out.println(x + " - " + y + " = " + (x - y));
