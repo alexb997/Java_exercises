@@ -1,9 +1,8 @@
-//Write a Java program that takes two numbers as input and display the product of two numbers
+//Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
 
 import java.util.Scanner;
 
-public class InputProduct {
-
+public class InputAverage {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -13,8 +12,11 @@ public class InputProduct {
         System.out.print("Input second number: ");
         int y = in.nextInt();
 
+        System.out.print("Input third number: ");
+        int z = in.nextInt();
+
         in.close();
 
-        System.out.println(x + " * " + y + " = " + x * y);
+        System.out.println("Average is: " + (x + y + z) / 3);
     }
 }

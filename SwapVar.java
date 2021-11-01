@@ -1,9 +1,8 @@
-//Write a Java program that takes two numbers as input and display the product of two numbers
+//Write a Java program to swap two variables
 
 import java.util.Scanner;
 
-public class InputProduct {
-
+public class SwapVar {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -15,6 +14,12 @@ public class InputProduct {
 
         in.close();
 
-        System.out.println(x + " * " + y + " = " + x * y);
+        System.out.println("Before Swap: x=" + x + "; y=" + y + ';');
+
+        int aux = x;
+        x = y;
+        y = aux;
+
+        System.out.println("After Swap: x=" + x + "; y=" + y + ';');
     }
 }
